@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Enhanced Simple Website</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #e0e0e0, #ffffff);
+            color: #333;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffeb3b;
+        }
+        header button {
+            background-color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            color: #4CAF50;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        header button:hover {
+            background-color: #4CAF50;
+            color: white;
+            transform: scale(1.1);
+        }
+        main {
+            padding: 30px;
+            max-width: 1000px;
+            margin: 30px auto;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+            border-top: 4px solid #4CAF50;
+            transition: background-color 0.3s ease;
+        }
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            color: #ffeb3b;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        section:hover {
+            transform: scale(1.05);
+            background-color: #e0f7fa;
+        }
+        section h2 {
+            text-align: center;
+            color: #4CAF50;
+            font-size: 1.8rem;
+        }
+        ul, ol {
+            padding-left: 30px;
+        }
+        li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #388E3C;
+        }
+
+        /* Dark mode styles */
+        .dark-mode {
+            background-color: #333;
+            color: white;
+        }
+        .dark-mode header {
+            background-color: #222;
+        }
+        .dark-mode footer {
+            background-color: #222;
+        }
+
+        /* Scroll animations */
+        .section-fade {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .section-fade.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+    <script>
+        // Dark Mode Toggle
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        // Scroll Animation
+        function checkScroll() {
+            const sections = document.querySelectorAll('.section-fade');
+            sections.forEach((section) => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const sectionInView = window.innerHeight - sectionTop > 150;
+                if (sectionInView) {
+                    section.classList.add('in-view');
+                }
+            });
+        }
+
+        // Scroll Event Listener
+        window.addEventListener('scroll', checkScroll);
+    </script>
+</head>
+<body onload="checkScroll()">
+    <header>
+        <h1>Welcome to My Enhanced Website</h1>
+        <nav>
+            <a href="#about">About Me</a> |
+            <a href="#hobbies">My Hobbies</a> |
+            <a href="#skills">Skills</a> |
+            <a href="#portfolio">Portfolio</a> |
+            <a href="#testimonials">Testimonials</a> |
+            <a href="#blog">Blog</a> |
+            <a href="#contact">Contact Me</a>
+        </nav>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </header>
+
+    <main>
+        <!-- About Me Section -->
+        <section id="about" class="section-fade">
+            <h2>About Me</h2>
+            <p>Hello! I am a passionate developer who loves creating websites and applications. I have been coding for over 5 years and enjoy learning new technologies and improving my skills.</p>
+        </section>
+
+        <!-- My Hobbies Section -->
+        <section id="hobbies" class="section-fade">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Reading - Fiction, Non-fiction, Science</li>
+                <li>Coding - Web Development, Mobile Apps, Automation</li>
+                <li>Music - Playing Guitar, Listening to Jazz</li>
+                <li>Traveling - Exploring new cultures</li>
+            </ul>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section-fade">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Angular</li>
+                <li>Node.js, Express</li>
+                <li>Python</li>
+                <li>SQL, MongoDB</li>
+            </ul>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section-fade">
+            <h2>My Portfolio</h2>
+            <p>Here are some projects I’ve worked on:</p>
+            <ul>
+                <li><a href="#">Project 1 - Web App</a></li>
+                <li><a href="#">Project 2 - Mobile App</a></li>
+                <li><a href="#">Project 3 - E-commerce Website</a></li>
+            </ul>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section-fade">
+            <h2>Testimonials</h2>
+            <blockquote>
+                "An excellent developer with great communication skills. Highly recommend!"
+                <footer>- John Doe, CEO of TechCorp</footer>
+            </blockquote>
+            <blockquote>
+                "Amazing work on the app. Very professional and skilled."
+                <footer>- Jane Smith, Product Manager at AppWorks</footer>
+            </blockquote>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="section-fade">
+            <h2>Blog</h2>
+            <p>Welcome to my blog! Here I share my thoughts on tech, development, and life.</p>
+            <ul>
+                <li><a href="#">Why I Love Coding</a></li>
+                <li><a href="#">How to Stay Motivated as a Developer</a></li>
+                <li><a href="#">Top 5 Programming Languages to Learn in 2025</a></li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-fade">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch with me, feel free to send an email or give me a call:</p>
+            <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
+            <p>Phone: +123456789</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Simple Website. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
