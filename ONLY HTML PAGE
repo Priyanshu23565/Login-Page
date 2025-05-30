@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beautiful HTML Website</title>
+</head>
+<body>
+
+    <header>
+        <h1>My Complete HTML Website</h1>
+        <marquee behavior="scroll" direction="left">🌟 Welcome to My Simple Website Without CSS & JS! 🌟</marquee>
+        <p>Pure HTML based site with Image, Audio, Video, Form, Table, Circle & More!</p>
+    </header>
+
+    <nav>
+        <p><strong>Navigation:</strong></p>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Image</a></li>
+            <li><a href="#media">Audio & Video</a></li>
+            <li><a href="#table">Table</a></li>
+            <li><a href="#form">Form</a></li>
+            <li><a href="#circle">Circle</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>This is a full-featured HTML website created without using CSS or JavaScript.</p>
+        </section>
+
+        <!-- Image Section -->
+        <section id="gallery">
+            <h2>Image Gallery</h2>
+            <p>Here is a sample image:</p>
+            <img src="https://via.placeholder.com/300" alt="Sample Image">
+        </section>
+
+        <!-- Audio and Video Section -->
+        <section id="media">
+            <h2>Multimedia</h2>
+
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="sample-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>Video</h3>
+            <video width="320" height="240" controls>
+                <source src="sample-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!-- Table Section -->
+        <section id="table">
+            <h2>Simple Table</h2>
+            <table border="1">
+                <caption>Student Marks</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Subject</th>
+                        <th>Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Amit</td>
+                        <td>Math</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td>Sita</td>
+                        <td>Science</td>
+                        <td>88</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Form Section -->
+        <section id="form">
+            <h2>Contact Form</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="gender">Gender:</label><br>
+                <input type="radio" name="gender" value="male"> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+                <button type="submit">Submit</button>
+                <input type="reset" value="Reset">
+            </form>
+        </section>
+
+        <!-- Circle Section -->
+        <section id="circle">
+            <h2>Circle (Using SVG)</h2>
+            <svg width="120" height="120">
+                <circle cx="60" cy="60" r="50" stroke="black" stroke-width="2" fill="lightblue" />
+            </svg>
+            <p>Above is a circle drawn using pure HTML (SVG).</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Info</h2>
+            <p>You can reach us at:</p>
+            <address>
+                Email: info@example.com<br>
+                Phone: +91-9876543210<br>
+                Location: India
+            </address>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Complete HTML Website</p>
+    </footer>
+
+</body>
+</html>
