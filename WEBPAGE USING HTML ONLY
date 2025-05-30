@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All HTML Tags - No CSS/JS</title>
+</head>
+<body bgcolor="#f5f5f5" text="black" link="blue" vlink="purple">
+
+  <center><h1>📚 All HTML Tags Showcase (No CSS / No JS)</h1></center>
+  <hr>
+
+  <!-- NAVIGATION -->
+  <h2>🔗 Quick Navigation</h2>
+  <ul>
+    <li><a href="#text">Text Formatting</a></li>
+    <li><a href="#forms">Forms</a></li>
+    <li><a href="#media">Media</a></li>
+    <li><a href="#table">Tables</a></li>
+    <li><a href="#semantic">Semantic Tags</a></li>
+    <li><a href="#obsolete">Obsolete Tags</a></li>
+    <li><a href="#misc">Misc Tags</a></li>
+  </ul>
+
+  <hr>
+
+  <!-- TEXT FORMATTING -->
+  <h2 id="text">📝 Text Formatting</h2>
+  <p>This is a <b>bold</b> and <strong>strong</strong> word.</p>
+  <p>This is an <i>italic</i> and <em>emphasized</em> word.</p>
+  <p><u>Underlined</u> and <s>Strikethrough</s> text.</p>
+  <p><mark>Highlighted</mark> text using mark.</p>
+  <p>Subscript: H<sub>2</sub>O &nbsp; | &nbsp; Superscript: X<sup>2</sup></p>
+  <p>Code: <code>int a = 10;</code></p>
+  <pre>
+function hello() {
+  return "Hello";
+}
+  </pre>
+  <blockquote>This is a blockquote example.</blockquote>
+  <q>Inline quote</q>
+  <p><abbr title="Hyper Text Markup Language">HTML</abbr> is a markup language.</p>
+  <address>Written by Developer, 123 Street, India</address>
+  <bdo dir="rtl">This text is right to left</bdo>
+  <hr>
+
+  <!-- FORMS -->
+  <h2 id="forms">🧾 Form Elements</h2>
+  <form>
+    <fieldset>
+      <legend>Form Fields</legend>
+      Text: <input type="text"><br><br>
+      Email: <input type="email"><br><br>
+      Password: <input type="password"><br><br>
+      Number: <input type="number"><br><br>
+      Range: <input type="range"><br><br>
+      Color: <input type="color"><br><br>
+      Date: <input type="date"><br><br>
+      File Upload: <input type="file"><br><br>
+      Checkbox: <input type="checkbox"> I Agree<br><br>
+      Radio: <input type="radio" name="gen"> Male
+             <input type="radio" name="gen"> Female<br><br>
+      <label>Dropdown:</label>
+      <select>
+        <option>Option 1</option>
+        <option>Option 2</option>
+      </select><br><br>
+      <textarea rows="3" cols="30">Enter something...</textarea><br><br>
+      <button type="submit">Submit</button>
+      <input type="reset" value="Reset">
+    </fieldset>
+  </form>
+
+  <hr>
+
+  <!-- MEDIA -->
+  <h2 id="media">🖼️ Media Elements</h2>
+  <img src="https://via.placeholder.com/150" alt="Image"><br><br>
+
+  <audio controls>
+    <source src="audio.mp3" type="audio/mp3">
+    Audio not supported.
+  </audio><br><br>
+
+  <video width="320" height="240" controls>
+    <source src="video.mp4" type="video/mp4">
+    Video not supported.
+  </video><br><br>
+
+  <iframe src="https://example.com" width="300" height="200" title="Example Site"></iframe><br><br>
+
+  <embed src="demo.pdf" width="200" height="150"><br>
+  <object data="demo.pdf" type="application/pdf" width="200" height="150"></object>
+
+  <hr>
+
+  <!-- TABLE -->
+  <h2 id="table">📊 Tables</h2>
+  <table border="1" cellpadding="5" cellspacing="0">
+    <caption>Simple Table</caption>
+    <thead>
+      <tr><th>Name</th><th>Age</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Ravi</td><td>25</td></tr>
+      <tr><td>Meena</td><td>22</td></tr>
+    </tbody>
+    <tfoot>
+      <tr><td colspan="2">End of Data</td></tr>
+    </tfoot>
+  </table>
+
+  <hr>
+
+  <!-- SEMANTIC -->
+  <h2 id="semantic">📦 Semantic Tags</h2>
+  <header><p>This is header tag</p></header>
+  <nav><p>This is nav tag</p></nav>
+  <main><p>This is main tag</p></main>
+  <section><p>This is section tag</p></section>
+  <article><p>This is article tag</p></article>
+  <aside><p>This is aside tag</p></aside>
+  <footer><p>This is footer tag</p></footer>
+
+  <hr>
+
+  <!-- OBSOLETE -->
+  <h2 id="obsolete">⚠️ Obsolete / Deprecated Tags</h2>
+  <center>This is center tag</center>
+  <font color="blue" size="5">This text uses font tag</font><br>
+  <marquee>Marquee scrolling text</marquee><br>
+  <tt>Teletype text (tt)</tt><br>
+  <blink>Blink tag (doesn't work now)</blink>
+
+  <hr>
+
+  <!-- MISC -->
+  <h2 id="misc">🔧 Miscellaneous Tags</h2>
+  <details>
+    <summary>Click to expand</summary>
+    This is the details tag content.
+  </details>
+  <dialog open>This is a dialog box</dialog><br>
+  <progress value="70" max="100">70%</progress><br>
+  <meter value="0.6">60%</meter><br>
+  <time datetime="2025-05-30">30 May 2025</time><br>
+  <template>
+    <p>This is inside a template tag (won’t be rendered until used in JS)</p>
+  </template>
+
+  <hr>
+
+  <center><p>&copy; 2025 - All HTML Tags Displayed | Made in Pure HTML</p></center>
+
+</body>
+</html>
